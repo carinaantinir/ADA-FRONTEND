@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #1A1316;
+}
+
+/*......... HEADER.......*/
+
+    header {
+        background: linear-gradient(
+        rgba(245, 200, 219, 0.7),
+        rgba(245, 200, 219, 0.7)
+    ),
+    url("imagenes/header.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+nav h1 {
+    color: #ffffff;
+    font-size: 42px;
+    text-shadow: 1px 1px 4px #000;
+}
+/* -------- INICIO -------- */
+
+#inicio {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 80px 40px;
+    background: linear-gradient(
+    rgba(255, 247, 250, 0.82),
+    rgba(243, 232, 255, 0.82)
+    ),
+    url("imagenes/fondo2.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+    
+
+
+.inicio-texto {
+    max-width: 450px;
+    text-align: left;
+}
+
+#inicio h2 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+#inicio p {
+    margin: 6px 0;
+}
+
+.subtitulo {
+    color: #c96b91;
+    font-weight: bold;
+}
+
+.foto-perfil {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* -------- BOTONES -------- */
+
+.botones-inicio {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.botones-inicio a {
+    background-color: #c96b91;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    min-width: 140px;
+    text-align: center;
+}
+
+/* -------- SECCIONES -------- */
+
+section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+#sobre-mi {
+    background: linear-gradient(
+    rgba(255, 240, 246, 0.85),
+    rgba(255, 240, 246, 0.85)
+    ),
+    url("imagenes/me.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* -------- HABILIDADES -------- */
+
+#habilidades {
+    background: linear-gradient(
+    rgba(255, 240, 246, 0.85),
+    rgba(255, 240, 246, 0.85)
+    ),
+    url("imagenes/sob.avif");
+    background-size: cover;
+    background-position: center;
+}
+
+#habilidades ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+#habilidades li {
+    background-color: #ede9fe;
+    border: 1px solid #c4b5fd;
+    border-radius: 12px;
+    padding: 20px;
+    width: 150px;
+    color: #5b21b6;
+}
+
+/* -------- PROYECTOS -------- */
+
+#proyectos {
+    background: linear-gradient(
+    rgba(255, 240, 246, 0.85),
+    rgba(255, 240, 246, 0.85)
+    ),
+    url("imagenes/labo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#proyectos ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    list-style: none;
+    max-width: 900px;
+    margin: auto;
+    padding: 0;
+}
+
+#proyectos li {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    min-height: 160px;
+
+}
+
+/* -------- CONTACTO -------- */
+
+#contacto {
+    background: linear-gradient(
+    rgba(255, 240, 246, 0.9),
+    rgba(255, 240, 246, 0.9)
+    ),
+    url("imagenes/iconos.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+#contacto form {
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contacto input,
+#contacto textarea {
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #e8a9c2;
+}
+
+#contacto button {
+    background-color: #c96b91;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+/* -------- CITA -------- */
+
+#cita {
+    background: linear-gradient(
+    rgba(255, 240, 246, 0.75),
+    rgba(255, 240, 246, 0.75)
+    ),
+    url("imagenes/contact.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #1A1316;
+}
+
+#cita blockquote {
+    font-style: italic;
+}
+
+/*-------- FOTER -----------*/
+
+footer {
+    background: linear-gradient(
+    rgba(255, 240, 246, 0.75),
+    rgba(255, 240, 246, 0.75)
+    ),
+    url("imagenes/cor.webp");
+    background-size: cover;
+    background-position: center;
+    color: rgb(3, 3, 3);
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width:780px) {
+    #inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+    .inicio-texto {
+        text-align: center;
+    }
+
+    #proyecto ul{
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .botones-inicio {
+        justify-content: center;
+    }
+}
